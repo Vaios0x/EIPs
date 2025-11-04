@@ -89,3 +89,40 @@ More information on Jekyll and GitHub Pages [here](https://docs.github.com/en/en
 ## Contributing
 
 We welcome contributions to improve the EIPs repository. Please ensure all pull requests follow the guidelines outlined in EIP-1 and pass all automated checks before submitting.
+
+### Contribution Process
+
+The contribution process follows these steps:
+
+1. **Fork the repository**: Create your own copy of the repository
+2. **Create a branch**: Create a new branch for your changes
+3. **Make changes**: Make your changes and test them locally
+4. **Run validation**: Run the validator to check for issues
+5. **Submit PR**: Submit a pull request with a clear description
+
+### Pull Request Guidelines
+
+When submitting a pull request:
+
+- Provide a clear title and description
+- Reference any related issues or discussions
+- Ensure all automated checks pass
+- Respond to review feedback promptly
+
+### Code Review Process
+
+All pull requests go through a review process:
+
+- Automated checks run on every PR
+- Editors review the content and structure
+- Feedback is provided for improvements
+- PRs are merged once approved
+
+### Getting Help
+
+If you need help with contributing:
+
+- Check the EIP-1 documentation for guidelines
+- Ask questions on Ethereum Magicians forum
+- Review existing pull requests for examples
+- Contact the EIP editors for guidance
