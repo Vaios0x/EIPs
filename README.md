@@ -19,6 +19,12 @@ Please note that this repository is for documenting standards and not for help i
 
 If you would like to become an EIP Editor, please read [EIP-5069](./EIPS/eip-5069.md).
 
+## Community Resources
+
+- **Ethereum Magicians**: [https://ethereum-magicians.org/](https://ethereum-magicians.org/) - Discussion forum for EIP proposals
+- **Ethereum Research**: [https://ethresear.ch/](https://ethresear.ch/) - Technical research discussions
+- **Ethereum Stack Exchange**: [https://ethereum.stackexchange.com](https://ethereum.stackexchange.com) - Q&A platform for implementation help
+
 ## Preferred Citation Format
 
 The canonical URL for an EIP that has achieved draft status at any point is at <https://eips.ethereum.org/>. For example, the canonical URL for EIP-1 is <https://eips.ethereum.org/EIPS/eip-1>.
