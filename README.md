@@ -48,6 +48,8 @@ cargo install eipw
 eipw --config ./config/eipw.toml <INPUT FILE / DIRECTORY>
 ```
 
+> **Tip**: Running the validator locally before submitting a PR can help catch issues early and speed up the review process.
+
 ## Build the status page locally
 
 ### Install prerequisites
