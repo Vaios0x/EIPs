@@ -48,6 +48,15 @@ cargo install eipw
 eipw --config ./config/eipw.toml <INPUT FILE / DIRECTORY>
 ```
 
+## Tools and Resources
+
+The following tools are commonly used when working with EIPs:
+
+- **eipw**: EIP validator tool for checking EIP compliance
+- **HTMLProofer**: Validates HTML formatting and checks for broken links
+- **CodeSpell**: Spell checking for documentation
+- **markdownlint**: Ensures markdown best practices
+
 ## Build the status page locally
 
 ### Install prerequisites
