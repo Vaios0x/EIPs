@@ -57,6 +57,37 @@ The following tools are commonly used when working with EIPs:
 - **CodeSpell**: Spell checking for documentation
 - **markdownlint**: Ensures markdown best practices
 
+### Installation
+
+To install these tools:
+
+```sh
+# Install eipw
+cargo install eipw
+
+# Install HTMLProofer (Ruby gem)
+gem install html-proofer
+
+# Install CodeSpell
+pip install codespell
+
+# Install markdownlint (Node.js)
+npm install -g markdownlint-cli
+```
+
+### Tool Usage
+
+Each tool serves a specific purpose in the EIP validation process:
+
+- Use `eipw` to validate EIP structure and content
+- Use `HTMLProofer` to check HTML output and links
+- Use `CodeSpell` to catch spelling errors
+- Use `markdownlint` to ensure proper Markdown formatting
+
+### Integration
+
+These tools are integrated into the GitHub Actions CI/CD pipeline and run automatically on every pull request.
+
 ## Build the status page locally
 
 ### Install prerequisites
