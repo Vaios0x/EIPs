@@ -6,6 +6,8 @@ The goal of the EIP project is to standardize and provide high-quality documenta
 
 The [status page](https://eips.ethereum.org/) tracks and lists EIPs, which can be divided into the following categories:
 
+> **Note**: Each category serves a specific purpose in the Ethereum ecosystem and follows its own review process.
+
 - [Core EIPs](https://eips.ethereum.org/core) are improvements to the Ethereum consensus protocol.
 - [Networking EIPs](https://eips.ethereum.org/networking) specify the peer-to-peer networking layer of Ethereum.
 - [Interface EIPs](https://eips.ethereum.org/interface) standardize interfaces to Ethereum, which determine how users and applications interact with the blockchain.
@@ -35,6 +37,8 @@ All pull requests in this repository must pass automated checks before they can 
 - Spelling is enforced with [CodeSpell](https://github.com/codespell-project/codespell)[^2]
   - False positives sometimes occur. When this happens, please submit a PR editing [.codespell-whitelist](https://github.com/ethereum/EIPs/blob/master/config/.codespell-whitelist) and **ONLY** .codespell-whitelist
 - Markdown best practices are checked using [markdownlint](https://github.com/DavidAnson/markdownlint)[^2]
+
+> **Important**: All automated checks must pass before a PR can be merged. Please ensure your changes comply with all validation rules.
 
 [^1]: https://github.com/ethereum/EIPs/blob/master/.github/workflows/auto-review-bot.yml
 [^2]: https://github.com/ethereum/EIPs/blob/master/.github/workflows/ci.yml
@@ -86,6 +90,27 @@ eipw --config ./config/eipw.toml <INPUT FILE / DIRECTORY>
 
 More information on Jekyll and GitHub Pages [here](https://docs.github.com/en/enterprise/2.14/user/articles/setting-up-your-github-pages-site-locally-with-jekyll).
 
+### Troubleshooting
+
+If you encounter issues while building the site locally, try:
+
+- Checking your Ruby version matches the required version
+- Ensuring all dependencies are installed correctly
+- Clearing the Jekyll cache and rebuilding
+
 ## Contributing
 
 We welcome contributions to improve the EIPs repository. Please ensure all pull requests follow the guidelines outlined in EIP-1 and pass all automated checks.
+
+### Getting Started
+
+If you're new to contributing to EIPs, here are some steps to get started:
+
+1. Fork the repository
+2. Create a new branch for your changes
+3. Make your changes and test them locally
+4. Submit a pull request with a clear description
+
+### Code of Conduct
+
+All contributors are expected to follow the project's code of conduct and maintain a respectful and inclusive environment.
