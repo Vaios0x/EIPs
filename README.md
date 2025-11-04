@@ -25,6 +25,8 @@ The canonical URL for an EIP that has achieved draft status at any point is at <
 
 Consider any document not published at <https://eips.ethereum.org/> as a working paper. Additionally, consider published EIPs with a status of "draft", "review", or "last call" to be incomplete drafts, and note that their specification is likely to be subject to change.
 
+When citing an EIP in academic or technical documentation, please use the canonical URL format for consistency and accessibility.
+
 ## Validation and Automerging
 
 All pull requests in this repository must pass automated checks before they can be automatically merged:
