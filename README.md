@@ -50,6 +50,48 @@ eipw --config ./config/eipw.toml <INPUT FILE / DIRECTORY>
 
 > **Tip**: Running the validator locally before submitting a PR can help catch issues early and speed up the review process.
 
+### Validator Options
+
+The validator supports several options for customizing its behavior:
+
+```sh
+# Validate a specific file
+eipw --config ./config/eipw.toml ./EIPS/eip-1.md
+
+# Validate all EIPs in a directory
+eipw --config ./config/eipw.toml ./EIPS/
+
+# Get detailed output
+eipw --config ./config/eipw.toml --verbose <FILE>
+```
+
+### Validator Output
+
+The validator provides detailed feedback on:
+
+- Missing required metadata fields
+- Formatting issues
+- Invalid references or links
+- Compliance with EIP-1 standards
+
+### Best Practices
+
+To get the most out of the validator:
+
+- Run validation before committing changes
+- Fix all errors before submitting a PR
+- Review validator output carefully
+- Use verbose mode for detailed information
+
+### Troubleshooting Validator Issues
+
+If you encounter issues with the validator:
+
+- Ensure you're using the latest version: `cargo install --force eipw`
+- Check that the config file exists and is valid
+- Verify your PATH includes the cargo bin directory
+- Try running with verbose mode for more details
+
 ## Build the status page locally
 
 ### Install prerequisites
