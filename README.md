@@ -29,11 +29,14 @@ Consider any document not published at <https://eips.ethereum.org/> as a working
 
 All pull requests in this repository must pass automated checks before they can be automatically merged:
 
+> **Note**: The validation process typically takes a few minutes. Please be patient while the checks complete.
+
 - [eip-review-bot](https://github.com/ethereum/eip-review-bot/) determines when PRs can be automatically merged [^1]
 - EIP-1 rules are enforced using [`eipw`](https://github.com/ethereum/eipw)[^2]
 - HTML formatting and broken links are enforced using [HTMLProofer](https://github.com/gjtorikian/html-proofer)[^2]
 - Spelling is enforced with [CodeSpell](https://github.com/codespell-project/codespell)[^2]
   - False positives sometimes occur. When this happens, please submit a PR editing [.codespell-whitelist](https://github.com/ethereum/EIPs/blob/master/config/.codespell-whitelist) and **ONLY** .codespell-whitelist
+  - If you encounter a false positive, you can add the word to the whitelist following the existing format
 - Markdown best practices are checked using [markdownlint](https://github.com/DavidAnson/markdownlint)[^2]
 
 [^1]: https://github.com/ethereum/EIPs/blob/master/.github/workflows/auto-review-bot.yml
@@ -43,12 +46,39 @@ It is possible to run the EIP validator locally:
 
 Make sure to add cargo's `bin` directory to your environment (typically `$HOME/.cargo/bin` in your `PATH` environment variable)
 
+For Windows users, you may need to add the path to your system environment variables. For Linux and macOS users, you can add it to your shell profile (e.g., `~/.bashrc` or `~/.zshrc`).
+
 ```sh
 cargo install eipw
 eipw --config ./config/eipw.toml <INPUT FILE / DIRECTORY>
 ```
 
 > **Tip**: Running the validator locally before submitting a PR can help catch issues early and speed up the review process.
+
+### Validator Configuration
+
+The validator uses a configuration file located at `./config/eipw.toml`. This file contains all the validation rules and settings. You can customize the validator behavior by modifying this configuration file.
+
+### Common Validation Errors
+
+Some common validation errors you might encounter:
+
+- Missing required fields in EIP metadata
+- Incorrect format for EIP numbers or titles
+- Broken links or references
+- Markdown formatting issues
+
+### Running Validation on Specific Files
+
+You can run the validator on specific files or directories:
+
+```sh
+eipw --config ./config/eipw.toml ./EIPS/eip-1.md
+```
+
+### Continuous Integration
+
+The validator is also run automatically on all pull requests through GitHub Actions. This ensures all submissions meet the required standards before merging.
 
 ## Build the status page locally
 
