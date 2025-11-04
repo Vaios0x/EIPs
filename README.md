@@ -25,6 +25,33 @@ If you would like to become an EIP Editor, please read [EIP-5069](./EIPS/eip-506
 - **Ethereum Research**: [https://ethresear.ch/](https://ethresear.ch/) - Technical research discussions
 - **Ethereum Stack Exchange**: [https://ethereum.stackexchange.com](https://ethereum.stackexchange.com) - Q&A platform for implementation help
 
+### Getting Help
+
+If you need help with EIPs:
+
+1. **Questions about implementation**: Post on Ethereum Stack Exchange
+2. **Proposal discussions**: Join Ethereum Magicians forum
+3. **Technical research**: Visit Ethereum Research
+4. **General inquiries**: Check the EIP repository issues
+
+### Community Guidelines
+
+When participating in community discussions:
+
+- Be respectful and constructive in your feedback
+- Provide clear and detailed information when asking questions
+- Follow the community guidelines for each platform
+- Search existing discussions before posting new questions
+
+### Contributing to Discussions
+
+When contributing to EIP discussions:
+
+- Read the full EIP proposal before commenting
+- Provide technical insights and constructive feedback
+- Reference relevant EIPs or standards when applicable
+- Help improve proposals through collaborative discussion
+
 ## Preferred Citation Format
 
 The canonical URL for an EIP that has achieved draft status at any point is at <https://eips.ethereum.org/>. For example, the canonical URL for EIP-1 is <https://eips.ethereum.org/EIPS/eip-1>.
