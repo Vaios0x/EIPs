@@ -97,6 +97,33 @@ Each tool can be configured to suit your needs:
 - **CodeSpell**: Use `.codespell-whitelist` for custom words
 - **markdownlint**: Configure via `.markdownlint.json` or `.markdownlint.yaml`
 
+### Tool Updates
+
+To update these tools to their latest versions:
+
+```sh
+# Update eipw
+cargo install --force eipw
+
+# Update HTMLProofer
+gem update html-proofer
+
+# Update CodeSpell
+pip install --upgrade codespell
+
+# Update markdownlint
+npm update -g markdownlint-cli
+```
+
+### Troubleshooting Tools
+
+If you encounter issues with these tools:
+
+- **eipw**: Ensure Rust and Cargo are installed and up to date
+- **HTMLProofer**: Check Ruby version compatibility
+- **CodeSpell**: Verify Python installation and pip availability
+- **markdownlint**: Ensure Node.js and npm are installed correctly
+
 ## Build the status page locally
 
 ### Install prerequisites
